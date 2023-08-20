@@ -1,0 +1,158 @@
+:root {
+    --primary-color: rgb(255, 217, 111); 
+    --primary-dark-color: #bba52a; 
+    --conteiner-color: #f0dc6d;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    color: black;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-image: url(../img/project1.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 1.3rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: black;
+    border: 2px solid var(--primary-dark-color);
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: var(--primary-dark-color);
+    color: white;
+}
+
+button:hover > i {
+    color: white;
+}
+
+button i {
+    color: black;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input, select {
+    padding: 0.25rem 0.5rem;
+}
+
+.hide {
+    display: none;
+}
+
+.task-container {
+    max-width: 30%;
+    margin: 3rem auto 0;
+    background-color: var(--conteiner-color);
+    padding: 1.5rem;
+    border-radius: 20px;
+    
+}
+
+.task-container header {
+    color: white;
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid black;
+}
+
+#task-form, #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: .3rem;
+}
+
+#cancel-edit-btn {
+    margin-top: 1rem;
+}
+
+#toolbar {
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    display: flex;
+}
+
+#toolbar h4 {
+    margin-bottom: 0.5rem;
+}
+
+#search {
+    border-right: 1px solid black;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 100%;
+    margin-right: 0.3rem;   
+}
+
+#filter {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select {
+    flex: 1;
+}
+
+.task {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    transition: 0.3s;
+}
+
+.task h3 {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.task buttom {
+    margin-left: 0.4rem;
+}
+
+.done {
+    background-color: var(--primary-dark-color);
+}
+
+.done h3 {
+    color: white;
+    text-decoration: line-through;
+    font-style: italic;
+}
