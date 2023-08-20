@@ -1,5 +1,5 @@
 <h1>
-  <img src="./assets/img/gif-projetc1">
+  <img src=".//projeto1/assets/img/git-project1.gif">
 </h1>
 
 # Task-list
