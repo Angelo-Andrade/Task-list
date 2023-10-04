@@ -1,6 +1,7 @@
-<h1 align="center">
+<div align="center">
   <img src=".//projeto1/assets/img/git-project1.gif">
-</h1>
+</div>
+
 
 # Task-list
 My first project in JavaScript!
